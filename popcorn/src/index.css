@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, #root{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+@font-face {
+    font-family: "Prism";
+    src: url("./fonts/prism.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Disney";
+    src: url("./fonts/disney.ttf") format('truetype');
+}
+    
+           

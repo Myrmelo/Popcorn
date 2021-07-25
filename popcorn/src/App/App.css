@@ -1,0 +1,25 @@
+.App {
+    
+    background-image: linear-gradient(to right bottom, #2d3036, #2a2d32, #27292e, #24262b, #212327);
+    height: 100%;
+    width: 100%;
+}
+
+
+.Header {
+    display: block;
+    width: 100%;
+}
+
+.Menu {
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.Movies {
+    margin: 5rem 0 0 3rem;
+}

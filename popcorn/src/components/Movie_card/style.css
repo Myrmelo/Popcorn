@@ -1,0 +1,9 @@
+#Card {
+    width: 17rem;
+    height: 23.5rem;
+    margin: .8rem;
+    border-radius: .3rem;
+    background: #FFF4D1;
+    
+box-shadow: 1px 1px 5px 3px rgba(255, 244, 209, 0.3);
+}

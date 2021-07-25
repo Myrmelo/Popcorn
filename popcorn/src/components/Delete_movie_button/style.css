@@ -1,0 +1,21 @@
+#Delete_Movie_button {
+    width: 12rem;
+    background: none;
+border: none;
+outline: none;
+font-size: 1.6rem;
+font-family: "Disney";
+color: #c3ebf7;
+margin: 1rem;
+}
+
+#Delete_Movie_button:hover {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-family: "Disney";
+    color: #FFF4D1;
+    transition: .5s;
+    cursor: pointer;
+}
