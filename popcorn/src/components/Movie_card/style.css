@@ -4,6 +4,9 @@
     margin: .8rem;
     border-radius: .3rem;
     background: #FFF4D1;
+    text-align: center;
+    font-family: "Disney";
+    color: #282B30;
     
 box-shadow: 1px 1px 5px 3px rgba(255, 244, 209, 0.3);
 }

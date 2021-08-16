@@ -21,5 +21,8 @@
 }
 
 .Movies {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
     margin: 5rem 0 0 3rem;
 }

@@ -1,0 +1,21 @@
+#Random_movie_button {
+    width: 11rem;
+    background: none;
+border: none;
+outline: none;
+font-size: 1.6rem;
+font-family: "Disney";
+color: #c3ebf7;
+margin: 1rem;
+}
+
+#Random_movie_button:hover {
+    background: none;
+border: none;
+outline: none;
+font-size: 1.8rem;
+font-family: "Disney";
+color: #FFF4D1;
+transition: .5s;
+cursor: pointer;
+}
