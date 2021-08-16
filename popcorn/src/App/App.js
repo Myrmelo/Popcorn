@@ -10,14 +10,14 @@ import axios from 'axios'
 
 function App() {
 
-  const [titles, setTitles] = useState([]);
+  const [movieid, setMovieid] = useState([]);
 
 useEffect(() => {
   axios.get('http://localhost:5000')
   .then(function (response) {
     // handle success
     for (let i=0;i<response.data.movies.length;i+=1) {
-      setTitles(response.data.movies[i].name)
+      setMovieid(response.data.movies[i].movieid)
     }
     
 
@@ -31,7 +31,7 @@ useEffect(() => {
   
 }, []);
 
-console.log({titles})
+console.log({movieid})
 
  /* axios.get('http://localhost:5000')
   .then(function (response) {
