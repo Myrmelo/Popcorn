@@ -39,6 +39,21 @@ const mainController = {
     }
     });
   },
+
+  addMovie: (req, res) => {
+    console.log(' chui le body tabernacle !', req.body)
+    dataMapper.addMovie( req.body, (err, results) => {
+      if(err) {
+        console.error(err);
+        return;
+      }else  {
+        console.log(results);
+      
+        res.send({movies : results.rows});
+    }
+    });
+  },
+
 }
 
 module.exports = mainController;

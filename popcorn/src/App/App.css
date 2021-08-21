@@ -1,7 +1,4 @@
 .App {
-    
-    background-image: linear-gradient(to right bottom, #2d3036, #2a2d32, #27292e, #24262b, #212327);
-    height: 100%;
     width: 100%;
 }
 
@@ -21,8 +18,12 @@
 }
 
 .Movies {
+    width: 90%;
+    height: 30%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-content: center;
-    margin: 5rem 0 0 3rem;
+    margin: 3rem auto;
+    overflow-y: scroll;
 }

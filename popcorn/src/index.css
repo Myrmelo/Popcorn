@@ -5,8 +5,9 @@
 html, body, #root{
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 100%;
+    background-image: linear-gradient(to right bottom, #23262b, #2a2d32, #27292e, #24262b, #212327);
+   
     
 }
 

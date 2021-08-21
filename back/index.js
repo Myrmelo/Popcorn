@@ -16,6 +16,7 @@ const app = express();
 
 app.use(express.static('static'));
 app.use(cors("*"));
+app.use(express.urlencoded({ extended: true }));
 app.use(router);
 
 
