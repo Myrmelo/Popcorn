@@ -60,6 +60,12 @@ display: none;
     font-weight: bold;
     color: #D76976;
 }
+
+#Movie_release {
+    font-weight: bold;
+    color: #c3ebf7;
+}
+
 #Movie_overview {
     color: rgb(255, 244, 209);
     
@@ -70,3 +76,15 @@ display: none;
     border-radius: .3rem;
 }
 
+#Delete  {
+    border: none;
+    background: #D76976;
+    color: #FFF4D1;
+    font-weight: bold;
+    font-family: 'Roboto';
+    padding: .4rem;
+    border-radius: .2rem;
+    font-size: .8rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}

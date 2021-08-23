@@ -1,0 +1,40 @@
+#closeModal {
+    width: 3rem;
+    background: none;
+border: none;
+outline: none;
+font-size: 1.6rem;
+font-family: "Disney";
+color: #9ebfc9;
+margin: .5rem;
+font-weight: bold;
+color:#728b92;
+cursor: pointer;
+position: absolute;
+top: 21rem;
+left: 74rem;
+}
+
+#Delete_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Delete_ok, #Dont_delete {
+    border: none;
+    background: #D76976;
+    color: #FFF4D1;
+    font-weight: bold;
+    font-family: 'Roboto';
+    padding: .4rem;
+    border-radius: .2rem;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+#Dont_delete{ 
+    filter: grayscale(.8);
+} 
