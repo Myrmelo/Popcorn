@@ -28,10 +28,15 @@ function App() {
             axios.get(
               `${BASE_URL}${movie.movieid}?api_key=${API_KEY}&language=fr`
             )
-          )
-        );
+          ),
+          movies.map((movie) =>
+            axios.get(
+              `${BASE_URL}$/credits${movie.movieid}/?api_key=${API_KEY}&language=fr`
+            )
+        ));
       })
       .then((responses) => {
+        console.log(responses)
         setMovieinfos(
           responses.map((response) => ({
             Genres: response.data.genres,

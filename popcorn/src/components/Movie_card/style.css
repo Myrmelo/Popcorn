@@ -2,17 +2,71 @@
     width: 17rem;
     height: 23.5rem;
     margin: 1rem;
-    border-radius: .3rem;
-    background: #FFF4D1;
-    text-align: center;
-    font-family: "Disney";
-    color: #282B30;
     
+    border-radius: .3rem;
+   align-items: center;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: .8rem;
 box-shadow: 1px 1px 5px 3px rgba(255, 244, 209, 0.3);
+position: relative;
 }
 
+
+#Card:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#Card:hover #Poster {
+    filter: brightness(0.2);
+    transition: 0.2s ease;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#Card:hover #Movie_infos {
+  
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    transition: .2s;
+    overflow-y: scroll;
+}
+
+
+#Card:hover #Movie_infos::-webkit-scrollbar{
+display: none;
+} 
+
+
+#Movie_infos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    padding: .8rem;
+    text-align: justify;
+    
+}
+#Movie_genres {
+    font-weight: bold;
+    color: #D76976;
+}
+#Movie_overview {
+    color: rgb(255, 244, 209);
+    
+}
 #Poster {
     height: 100%;
     width: 100%;
     border-radius: .3rem;
 }
+
