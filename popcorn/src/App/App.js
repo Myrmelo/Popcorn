@@ -3,7 +3,6 @@ import './App.css';
 import Logo from '../components/Logo'
 import Search from '../components/Search'
 import Add_movie_button from '../components/Add_movie_button'
-import Delete_movie_button from '../components/Delete_movie_button'
 import Random_movie_button from '../components/Random_movie_button'
 import Movie_card from '../components/Movie_card'
 import axios from 'axios'
@@ -45,6 +44,7 @@ function App() {
             Company: response.data.production_companies,
             Release: response.data.release_date,
             Title: response.data.title,
+            Id: response.data.id
           }))
         );
       });
@@ -59,7 +59,6 @@ function App() {
       <div className="Menu">
         <Search />
         <Add_movie_button />
-        <Delete_movie_button />
         <Random_movie_button />
       </div>
       <div className="Movies">

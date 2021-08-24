@@ -54,6 +54,21 @@ const mainController = {
     });
   },
 
+  deleteMovie: (req, res) => {
+    console.log(' chui l\' id du film tabernacle !', req.params.id)
+    const id = req.params.id
+    dataMapper.deleteMovie( id, (err, results) => {
+      if(err) {
+        console.error(err);
+        return;
+      }else  {
+        console.log(results);
+      
+        res.send({movies : results.rows});
+    }
+    });
+  },
+
 }
 
 module.exports = mainController;

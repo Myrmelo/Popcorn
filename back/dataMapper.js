@@ -17,7 +17,7 @@ const dataMapper = {
     },
 
     getOneRandomMovie : (callback) => {
-        client.query(`SELECT movieid FROM "movie" ORDER BY RANDOM() limit 1`, (error, results) => {
+        client.query(`SELECT "movieid" FROM "movie" ORDER BY RANDOM() limit 1`, (error, results) => {
         
             callback(error, results);
         })
@@ -31,6 +31,13 @@ const dataMapper = {
         })
     },
 
+    deleteMovie : (movieid, callback) => {
+        console.log(movieid)
+        client.query(`DELETE FROM "movie"  WHERE "movieid" = $1`,[movieid], (error, results) => {
+        
+            callback(error, results);
+        })
+    },
 };
 
 module.exports = dataMapper;

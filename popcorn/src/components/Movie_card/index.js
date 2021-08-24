@@ -25,7 +25,7 @@ console.log(OrderedDate)
             </div>
   
         </div>
-        {openModal && <Delete_modal closeModal= {setOpenModal}/>}
+        {openModal && <Delete_modal closeModal= {setOpenModal} data= {data}/>}
     </>
     )
     
