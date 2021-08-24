@@ -19,3 +19,123 @@ color: #FFF4D1;
 transition: .5s;
 cursor: pointer;
 }
+
+#ModalBackground {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(37, 40, 45, 0.8);
+z-index: 2;
+
+}
+
+#ModalContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    width: 30%;
+    height: 30%;
+    background: #FFF4D1;
+    animation: 1s fadein;
+    box-shadow: 1px 1px 5px 3px rgba(255, 244, 209, 0.3);
+    border-radius: .3rem;
+   margin: auto;
+
+}
+
+#addMovieForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movieId {
+    width: 10rem;
+    height: 2rem;
+    margin-left: 4rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #9ebfc9;
+    outline: none;
+    font-size: 1.6rem;
+    font-family: "Disney";
+    color: #FFF4D1;
+    }
+    
+    
+        #movieId:hover, #movieId:focus {
+       
+            
+        border-bottom: 2px solid #D76976;
+        transition: 0.5s;
+            }
+    
+            #movieId:focus{
+       
+                color: #D76976;
+                }
+    
+                #movieId::placeholder {
+                    font-size: 1.3rem;
+                    margin: .5rem;
+                    font-family: "Disney";
+                 
+                }
+    
+                #movieId::-webkit-search-cancel-button{
+                    visibility: hidden;
+                }
+
+#formTitle {
+    font-family: "Disney";
+    color: #9ebfc9;
+    margin: -2rem 0 2rem 0;
+    font-size: 2.5rem;
+}
+
+#submit {
+    width: 5rem;
+    background: none;
+border: none;
+outline: none;
+font-size: 1.4rem;
+font-family: "Disney";
+color: #9ebfc9;
+font-weight: bold;
+margin-left: 1rem;
+}
+
+#submit:hover {
+    
+    color: #728b92;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#closeModal {
+    width: 3rem;
+    background: none;
+border: none;
+outline: none;
+font-size: 1.6rem;
+font-family: "Disney";
+color: #9ebfc9;
+margin: .5rem;
+font-weight: bold;
+color:#728b92;
+cursor: pointer;
+position: absolute;
+top: 21rem;
+left: 74rem;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

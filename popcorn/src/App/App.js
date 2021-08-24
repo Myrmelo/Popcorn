@@ -16,6 +16,8 @@ function App() {
   
   const [movieinfos, setMovieinfos] = useState([]);
 
+
+
   useEffect(() => {
     axios
       .get("http://localhost:5000")
@@ -50,7 +52,6 @@ function App() {
       });
   }, []);
 
-  
   return (
     <div className="App">
       <div className="Header">
@@ -59,6 +60,7 @@ function App() {
       <div className="Menu">
         <Search />
         <Add_movie_button />
+         
         <Random_movie_button />
       </div>
       <div className="Movies">
