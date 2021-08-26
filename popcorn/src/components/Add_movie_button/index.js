@@ -20,7 +20,7 @@ const Add_movie_button = () => {
                 console.error('Something went wrong!', error);
             });
         setOpenModal(false)
-        
+        window.location.reload();
     }
     return (
         <>

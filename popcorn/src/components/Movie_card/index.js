@@ -10,7 +10,7 @@ const Release = data.data.Release
 let OrderedDate = Release.split('-').reverse().join('-')
 
 const [openModal, setOpenModal] = useState(false)
-const [isDelete, setIsDelete] =useState(false)
+const [isDelete, setIsDelete] = useState(false)
 function deleteMovie () {
     console.log(data.data.Id)
         axios.delete(`http://localhost:5000/deleteMovie/${data.data.Id}`)

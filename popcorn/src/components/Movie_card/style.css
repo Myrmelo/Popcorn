@@ -6,7 +6,7 @@
 .Card {
     width: 17rem;
     height: 23.5rem;
-    margin: 1rem;
+    margin: 1.2rem 1.2rem 1.2rem;
     
     border-radius: .3rem;
    align-items: center;

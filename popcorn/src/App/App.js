@@ -17,8 +17,8 @@ function App() {
   const [movieinfos, setMovieinfos] = useState([]);
 
 
-
-  useEffect(() => {
+useEffect(() => {
+  
     axios
       .get("http://localhost:5000")
       .then(function (response) {
@@ -30,11 +30,7 @@ function App() {
               `${BASE_URL}${movie.movieid}?api_key=${API_KEY}&language=fr`
             )
           ),
-          movies.map((movie) =>
-            axios.get(
-              `${BASE_URL}$/credits${movie.movieid}/?api_key=${API_KEY}&language=fr`
-            )
-        ));
+        );
       })
       .then((responses) => {
         console.log(responses)
@@ -50,8 +46,10 @@ function App() {
           }))
         );
       });
-  }, []);
+   }, []);
 
+  
+  
   return (
     <div className="App">
       <div className="Header">
@@ -60,8 +58,7 @@ function App() {
       <div className="Menu">
         <Search />
         <Add_movie_button />
-         
-        <Random_movie_button />
+        <Random_movie_button data= {movieinfos}/>
       </div>
       <div className="Movies">
         {movieinfos.map((movie) => <Movie_card key={movie.Title} data={movie} />)}

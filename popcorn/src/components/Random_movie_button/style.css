@@ -19,3 +19,121 @@ color: #FFF4D1;
 transition: .5s;
 cursor: pointer;
 }
+
+#ModalBackground {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(37, 40, 45, 0.8);
+z-index: 2;
+
+}
+
+#ModalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     width: 30%;
+     height: 60%;
+     background: #FFF4D1;
+     animation: 1s fadein;
+     box-shadow: 1px 1px 5px 3px rgba(255, 244, 209, 0.3);
+     border-radius: .3rem;
+    margin: auto;
+ 
+ }
+
+ 
+ .RandomCard {
+    width: 17rem;
+    height: 23.5rem;
+    margin: 1rem;
+    
+    border-radius: .3rem;
+   align-items: center;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: .8rem;
+box-shadow: 1px 1px 5px 3px #25292E;
+position: relative;
+}
+
+.RandomCard:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.RandomCard:hover #Poster {
+    filter: brightness(0.2);
+    transition: 0.2s ease;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.RandomCard:hover #Movie_infos {
+  
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    transition: .2s;
+    overflow-y: scroll;
+}
+
+.RandomCard:hover #Movie_infos::-webkit-scrollbar{
+display: none;
+} 
+
+#yourMovie {
+    font-family: "Disney";
+    color: #9ebfc9;
+    font-size: 2.5rem;
+    margin: .5rem 0 .5;
+}
+
+#submit {
+    width: 5rem;
+    background: none;
+border: none;
+outline: none;
+font-size: 1.4rem;
+font-family: "Disney";
+color: #9ebfc9;
+font-weight: bold;
+margin-left: 1rem;
+}
+
+#submit:hover {
+    
+    color: #728b92;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#closeModal {
+    width: 3rem;
+    background: none;
+border: none;
+outline: none;
+font-size: 1.6rem;
+font-family: "Disney";
+color: #9ebfc9;
+margin: .5rem;
+font-weight: bold;
+color:#728b92;
+cursor: pointer;
+position: absolute;
+top: 21rem;
+left: 74rem;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
