@@ -29,6 +29,12 @@
     overflow-y: scroll;
 }
 
+.Movies::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 #Random_movie_button {
     width: 11rem;
     background: none;

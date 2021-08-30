@@ -28,7 +28,7 @@ const Add_movie_button = () => {
 
             {openModal &&
                 <div id="ModalBackground">
-                    <div id="ModalContainer">
+                    <div id="AddMovieModalContainer">
                         <button id="closeModal" onClick={() => { setOpenModal(false) }}>X</button>
                         <h1 id="formTitle">Numéro du film</h1>
                         <form onSubmit={handleSubmit(onSubmit)} id="addMovieForm">

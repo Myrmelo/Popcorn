@@ -26,8 +26,8 @@ function deleteMovie () {
           setIsDelete(true)
 
     }
-console.log(OrderedDate)
-    console.log(data)
+//console.log(OrderedDate)
+   // console.log(data)
     return (
 
         <>
