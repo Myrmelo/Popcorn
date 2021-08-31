@@ -1,19 +1,4 @@
-#closeModal {
-    width: 3rem;
-    background: none;
-border: none;
-outline: none;
-font-size: 1.6rem;
-font-family: "Disney";
-color: #9ebfc9;
-margin: .5rem;
-font-weight: bold;
-color:#728b92;
-cursor: pointer;
-position: absolute;
-top: 21rem;
-left: 74rem;
-}
+
 
 #Delete_buttons {
     display: flex;

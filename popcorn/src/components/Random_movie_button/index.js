@@ -9,11 +9,6 @@ const Random_movie_button = (data) => {
  
 let randomMovie = data.data[Math.floor(Math.random()*data.data.length)]
 
-
-  /*  const Release = randomMovie.Release
-let OrderedDate = Release.split('-').reverse().join('-')*/
-
-
  console.log(randomMovie)
 
     return (
@@ -26,10 +21,11 @@ let OrderedDate = Release.split('-').reverse().join('-')*/
                         <button id="closeModal" onClick={() => setOpenModal(false)}>X</button>
                         <h1 id="yourMovie">Votre film !</h1>
                         <div className='RandomCard' >
+                        
                         <img id="Poster" src={`https://image.tmdb.org/t/p/original/${randomMovie.Poster}`} />
             <div id="Movie_infos">
-                 {/*} <p id="Movie_genres"> {randomMovie.Genres.map(genre => genre.name).join(', ')}</p>
-                  <p id="Movie_release">{OrderedDate} </p>*/}
+            <p id="Movie_genres"> {randomMovie.Genres.map(genre => genre.name).join(', ')}</p>
+                <p id="Movie_release"> {randomMovie.Release.split('-').reverse().join('-')} </p>
             <p id="Movie_overview"> {randomMovie.Overview}</p>
             <button id ="Delete" onClick= {() => {setOpenModal(true)}}>Supprimer</button>
             </div>

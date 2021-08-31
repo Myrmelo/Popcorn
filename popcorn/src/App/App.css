@@ -1,9 +1,15 @@
-.App {
-    width: 100vw;
-    height: 100vh;
+html, body, #root {
+    overflow-y: hidden;
 }
 
+.App {
+    width: 100%;
+    height: 100%;
+}
 
+::-webkit-scrollbar {
+    display: none;
+}
 .Header {
     display: block;
     width: 100%;
@@ -20,7 +26,7 @@
 
 .Movies {
     width: 90%;
-    height: 65%;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,3 +62,11 @@ color: #FFF4D1;
 transition: .5s;
 cursor: pointer;
 }
+
+@media all and (max-width: 470px) {
+    .Menu {
+  flex-wrap: wrap;
+      justify-content: space-around;
+      height: 10%;
+    }
+  }

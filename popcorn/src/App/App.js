@@ -66,9 +66,9 @@ console.log(searchTitle)
       </div>
       <div className="Movies">
       
-         {/*movieinfos.filter(movie => movie.title.includes(searchTitle)).map(movie => (<p>{movie.title}</p>))*/}
-          
-          {movieinfos.map(movie => <Movie_card key={movie.Title} data={movie} />)} 
+         {searchTitle ? movieinfos.filter(movie => movie.Title.includes(searchTitle)).map(movie => (<Movie_card key={movie.Title} data={movie} />))
+          :
+          movieinfos.map(movie => <Movie_card key={movie.Title} data={movie} />)} 
           
 
       </div>

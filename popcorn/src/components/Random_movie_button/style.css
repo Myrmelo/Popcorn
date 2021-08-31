@@ -35,8 +35,6 @@ z-index: 2;
 
 #ModalContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
      width: 30%;
      height: 60%;
@@ -45,13 +43,15 @@ z-index: 2;
      box-shadow: 1px 1px 5px 3px rgba(255, 244, 209, 0.3);
      border-radius: .3rem;
     margin: auto;
+    padding: 1rem;
+    
  
  }
 
  
  .RandomCard {
-    width: 17rem;
-    height: 23.5rem;
+    width: 16rem;
+    height: 22.5rem;
     margin: 1rem;
     
     border-radius: .3rem;
@@ -60,7 +60,7 @@ z-index: 2;
     font-family: "Roboto";
     font-size: .8rem;
 box-shadow: 1px 1px 5px 3px #25292E;
-position: relative;
+align-self: center;
 }
 
 .RandomCard:hover {
@@ -84,6 +84,7 @@ position: relative;
     opacity: 1;
     transition: .2s;
     overflow-y: scroll;
+    visibility: visible;
 }
 
 .RandomCard:hover #Movie_infos::-webkit-scrollbar{
@@ -94,7 +95,8 @@ display: none;
     font-family: "Disney";
     color: #9ebfc9;
     font-size: 2.5rem;
-    margin: .5rem 0 .5;
+    margin: -.5rem 0 2rem 0;
+    align-self: center;
 }
 
 #submit {
@@ -116,24 +118,15 @@ margin-left: 1rem;
     cursor: pointer;
 }
 
-#closeModal {
-    width: 3rem;
-    background: none;
-border: none;
-outline: none;
-font-size: 1.6rem;
-font-family: "Disney";
-color: #9ebfc9;
-margin: .5rem;
-font-weight: bold;
-color:#728b92;
-cursor: pointer;
-position: absolute;
-top: 21rem;
-left: 74rem;
-}
 
 @keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@media all and (max-width: 620px) {
+    #Random_movie_button {
+        font-size: 1.2rem;
+        margin: .2rem;
+  }
 }

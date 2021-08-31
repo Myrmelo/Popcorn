@@ -35,8 +35,7 @@ z-index: 2;
 
 #AddMovieModalContainer {
    display: flex;
-   justify-content: center;
-   align-items: center;
+   
    flex-direction: column;
     width: 20%;
     height: 20%;
@@ -45,6 +44,7 @@ z-index: 2;
     box-shadow: 1px 1px 5px 3px rgba(255, 244, 209, 0.3);
     border-radius: .3rem;
    margin: auto;
+   padding: 1rem;
 
 }
 
@@ -67,6 +67,7 @@ z-index: 2;
     font-size: 1.6rem;
     font-family: "Disney";
     color: #FFF4D1;
+    align-self: center;
     }
     
     
@@ -98,6 +99,7 @@ z-index: 2;
     color: #9ebfc9;
     margin: -2rem 0 2rem 0;
     font-size: 2.5rem;
+    align-self: center;
 }
 
 #submit {
@@ -120,23 +122,37 @@ margin-left: 1rem;
 }
 
 #closeModal {
-    width: 3rem;
     background: none;
 border: none;
 outline: none;
 font-size: 1.6rem;
 font-family: "Disney";
-color: #9ebfc9;
-margin: .5rem;
 font-weight: bold;
 color:#728b92;
 cursor: pointer;
-position: absolute;
-top: 21rem;
-left: 74rem;
+align-self: flex-end;
 }
 
 @keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+@media all and (max-width: 1640px) {
+    #formTitle {
+       font-size: 2rem;
+        }
+
+    #submit {
+            font-size: 1.2rem;
+             }
+
+  }
+
+
+@media all and (max-width: 620px) {
+    #Add_Movie_button {
+        font-size: 1.2rem;
+        margin: 1rem .2rem;
+    }
+  }
